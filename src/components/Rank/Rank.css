@@ -1,0 +1,46 @@
+.ko-rank-container {
+  margin-bottom: 10px;
+}
+
+.ko-rank-container h1 {
+  font-size: 1.2rem;
+  color: #dfe6e9;
+}
+
+@media screen and (min-width: 576px) {
+  .ko-rank-container h1 {
+    font-size: 1.2rem;
+
+  }
+  
+  }
+  @media screen and (min-width: 992px) {
+    .ko-rank-container h1 {
+      font-size: 1.8rem;
+  
+    }
+  
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .ko-rank-container h1 {
+      font-size: 1.8rem;
+  
+    }
+  
+  }
+
+  @media screen and (min-width: 1440px) {
+    .ko-rank-container h1 {
+      font-size: 2rem;
+  
+    }
+  
+  }
+  
+  @media screen and (min-width: 2560px) {
+      .ko-rank-container h1 {
+        font-size: 4.8rem;
+    }
+  
+  }

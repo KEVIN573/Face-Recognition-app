@@ -1,0 +1,83 @@
+/*==========Footer Styles=============*/
+.footer-section {
+  background: #273755;
+  border-top: 2px solid #fafcff;
+  text-align: center;
+  padding: 40px 0;
+  }
+  
+.footer-text-container{
+  margin: 20px 0;
+}
+
+.footer-section p {
+  font-size: 16px;
+  line-height: 15px;
+  color: #fafcff;
+  
+}
+  
+.footer-text-container p:first-child{
+  margin-bottom: 12px;
+}
+
+.footer-section p a{
+  font-size: 16px;
+  line-height: 15px;
+  color: #fafcff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 576px) {
+.ko-rank-container h1 {
+  font-size: 1.2rem;
+
+}
+
+}
+@media screen and (min-width: 992px) {
+  .ko-rank-container h1 {
+    font-size: 1.8rem;
+
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .ko-rank-container h1 {
+    font-size: 1.8rem;
+
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  .ko-rank-container h1 {
+    font-size: 2rem;
+
+  }
+
+}
+
+@media screen and (min-width: 2560px) {
+
+  .footer-section {
+    padding: 100px 0;
+    } 
+
+  .footer-section p {
+    font-size: 3rem;
+    line-height: 50px;
+  }
+
+  .footer-section p a{
+    font-size: 3rem;
+    line-height: 40px;
+  
+  }
+
+  .footer-text-container{
+    margin: 50px 0;
+  }
+
+}

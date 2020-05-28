@@ -1,0 +1,94 @@
+/* social-links */
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 0 6px 0 0;
+    background: #fafcff;
+    overflow: hidden;
+    border-radius: 2px;
+    font-size: 1rem;
+    color: #273755;
+  }
+  
+  .social-links a:hover{
+    color: #fafcff;
+    z-index: 11;
+  
+  }
+  
+  .social-links a:before{
+    position: absolute;
+    content: ""; 
+    top: 0px;
+    height: 100%;
+    left: -50%;
+    width: 0%;
+    background-color: #8aabca;
+    transform: skew(50deg);
+    transition-duration: .6s;
+    z-index: 1;
+  }
+  
+  .social-links a:hover:before{
+    width: 230%;
+  
+  }
+  
+  .social-links a i{
+    position: relative;
+    z-index: 9;
+  }
+/*========Responsive Part of social Links Component=====*/
+  @media screen and (min-width: 576px) {
+    .ko-rank-container h1 {
+      font-size: 1.2rem;
+  
+    }
+    
+    }
+    @media screen and (min-width: 992px) {
+      .ko-rank-container h1 {
+        font-size: 1.8rem;
+    
+      }
+    
+    }
+    
+    @media screen and (min-width: 1024px) {
+      .ko-rank-container h1 {
+        font-size: 1.8rem;
+    
+      }
+    
+    }
+  
+    @media screen and (min-width: 1440px) {
+      .ko-rank-container h1 {
+        font-size: 2rem;
+    
+      }
+    
+    }
+    
+    @media screen and (min-width: 2560px) {
+      .social-links a{
+        width: 100px;
+        height: 100px;
+        margin: 0 20px 0 0;
+        font-size: 3rem;
+        border-radius: 10px;
+      
+      }
+    
+    }
+  /* End of social-links */

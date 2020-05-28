@@ -1,10 +1,13 @@
 import React from 'react'
+import '../Rank/Rank.css'
+
 
 const Rank = () => {
     return (
-        <div className='rank'>
-            <h1>Hello from Rank</h1>
+        <div className='ko-rank-container'>
+            <h1>Rank number, #5</h1>
         </div>
+        
     )
 }
 

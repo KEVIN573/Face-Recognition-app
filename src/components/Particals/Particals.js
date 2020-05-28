@@ -1,5 +1,6 @@
 import React from 'react'
 import Particles from 'react-particles-js';
+import '../Particals/Particals.css'
 
 const Particals = () => {
     return (

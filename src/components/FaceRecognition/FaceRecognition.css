@@ -1,0 +1,125 @@
+.img-container{
+  text-align: center;
+  margin-top: 20px;
+  height: 200px;
+  width: 200px;
+  font-size: 2rem;
+  color: #dfe6e9;
+  }
+  
+.img-container img {
+  width: 200px;
+  height: auto;
+
+}
+
+.bounding-box {
+  position: absolute;
+  box-shadow: 0 0 0 3px #149df2 inset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn-detect:before{
+  position: absolute;
+  content: ""; 
+  top: 0px;
+  height: 100%;
+  left: -25%;
+  width: 0%;
+  background-color: #273755;
+  transform: skew(50deg);
+  transition-duration: 1s;
+  z-index: 1;
+}
+
+.btn-detect:hover{
+  color: #fafcff;
+  cursor: pointer;
+}
+
+.btn-detect:hover:before{
+  width: 170%;
+}
+
+
+.btn-detect span{
+position: relative;
+    z-index: 9;
+}
+
+.face-detection-img img{
+  width: 200px;
+  height: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .img-container img {
+    width: 250px;
+    
+  }
+
+  .img-container{
+    width: 250px;
+    height: 250px;
+    
+    }
+  
+  }
+  @media screen and (min-width: 992px) {
+
+    .img-container img {
+      width: 300px;
+      
+    }
+
+    .img-container{
+      width: 300px;
+      height: 300px;
+      
+      }
+  
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .img-container img {
+      width: 350px;
+      
+    }
+
+    .img-container{
+      width: 350px;
+      height: 350px;
+      
+      }
+  
+  }
+
+  @media screen and (min-width: 1440px) {
+    .img-container img {
+      width: 400px;
+      
+    }
+    .img-container{
+      width: 400px;
+      height: 400px;
+      
+      }
+  
+  }
+  
+  @media screen and (min-width: 2560px) {
+    .img-container img {
+      width: 680px;
+      
+    }
+
+    .img-container{
+      font-size: 3rem;
+      
+    }
+  
+  }
+
+

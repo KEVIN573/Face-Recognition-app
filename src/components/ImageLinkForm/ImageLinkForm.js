@@ -1,10 +1,11 @@
 import React from 'react'
+import '../ImageLinkForm/ImageLinkForm.css'
 
 const ImageLinkForm = ({onInputChange, onButtonsubmit}) => {
   return (
      <section className='imagelink'>
-      <div className='text'>
-        <p>{'This App will detect a face in your image, Give it a try'}</p>
+      <div className='ko-text-container'>
+        <p>{'Detect a face in your image, have Fun!'}</p>
       </div>
       
       <div className='input-container'>
