@@ -1,7 +1,7 @@
 import React from 'react'
 import '../ImageLinkForm/ImageLinkForm.css'
 
-const ImageLinkForm = ({onInputChange, onButtonsubmit}) => {
+const ImageLinkForm = ({onInputChange, onButtonSubmit}) => {
   return (
      <section className='imagelink'>
       <div className='ko-text-container'>
@@ -10,7 +10,7 @@ const ImageLinkForm = ({onInputChange, onButtonsubmit}) => {
       
       <div className='input-container'>
         <input type='text' id="email"  name="email" placeholder='Enter Image Url'  onChange={onInputChange}/>
-        <button className="btn-detect" onClick={onButtonsubmit}><span>Detect</span></button>
+        <button className="btn-detect" onClick={onButtonSubmit}><span>Detect</span></button>
       </div>  
     </section>
     
