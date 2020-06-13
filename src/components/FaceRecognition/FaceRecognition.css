@@ -1,16 +1,19 @@
 .img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
   text-align: center;
   margin-top: 20px;
-  height: 200px;
-  width: 200px;
   font-size: 2rem;
   color: #dfe6e9;
+  z-index: 100;
+  border: 2px solid red;
   }
   
 .img-container img {
-  
-  border: 2px solid yellowgreen;
-
+  z-index: 101;
 }
 
 .bounding-box {
@@ -20,33 +23,7 @@
   flex-wrap: wrap;
   justify-content: center;
   cursor: pointer;
-}
-.btn-detect:before{
-  position: absolute;
-  content: ""; 
-  top: 0px;
-  height: 100%;
-  left: -25%;
-  width: 0%;
-  background-color: #273755;
-  transform: skew(50deg);
-  transition-duration: 1s;
-  z-index: 1;
-}
-
-.btn-detect:hover{
-  color: #fafcff;
-  cursor: pointer;
-}
-
-.btn-detect:hover:before{
-  width: 170%;
-}
-
-
-.btn-detect span{
-position: relative;
-    z-index: 9;
+  z-index: 1022;
 }
 
 .face-detection-img img{
@@ -58,7 +35,7 @@ position: relative;
   .img-container img {
     width: 250px;
     
-  }
+  } 
 
   .img-container{
     width: 250px;
@@ -86,7 +63,7 @@ position: relative;
     .img-container img {
       width: 350px;
       
-    }
+    } 
 
     .img-container{
       width: 350px;
@@ -100,7 +77,7 @@ position: relative;
     .img-container img {
       width: 400px;
       
-    }
+    } 
     .img-container{
       width: 400px;
       height: 400px;
