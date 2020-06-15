@@ -1,0 +1,2700 @@
+/*====Nav Css Start====*/
+.ms_sidemenu_wrapper {
+	position: fixed;
+	width: 80px;
+	background: #273755;
+	height: 100%;
+	z-index: 1000;
+	top: 0;
+	bottom: 0;
+
+}
+.ms_logo {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+.ms_logo span {
+	width: 100%;
+	display: none;
+	font-size: 18px;
+	color: #b1d4e0;
+	text-transform: capitalize;
+}
+.ms_logo_inner {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	min-height: 164px;
+}
+.ms_nav_wrapper {
+	padding: 0px 0px;
+	position: absolute !important;
+	left: 0;
+	top: 164px;
+	right: 0;
+	bottom: 70px;
+}
+.ms_nav_wrapper ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+.ms_nav_wrapper ul li {
+	width: 100%;
+	display: block;
+}
+.ms_nav_wrapper ul li a {
+	color: #b1d4e0;
+	text-transform: capitalize;
+	width: 100%;
+	display: block;
+	padding: 9px 0px;
+	position: relative;
+	text-align: center;
+	font-size: 14px;
+}
+.ms_nav_wrapper ul li a:after {
+	position: absolute;
+	height: 2px;
+	background-color:  #273755;
+	bottom: 0px;
+	left: 20px;
+	right: 20px;
+	content: "";
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+.ms_nav_wrapper ul li:last-child a:after {
+	display: none;
+}
+.ms_nav_wrapper ul li a:hover{
+	background-color: #3498db;
+	color: #273755;
+}
+.ms_nav_wrapper ul li a:hover:after,
+.ms_nav_wrapper ul li a.active:after {
+	background-color: #273755;
+}
+.ms_nav_wrapper ul li a:hover span.nav_icon>.fa,
+.ms_nav_wrapper ul li a.active span.nav_icon>.fa {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	color:  #273755;
+
+}
+.ms_nav_wrapper ul.nav_downloads {
+	margin-top: 40px;
+	
+}
+.ms_nav_wrapper ul.nav_playlist {
+	margin-top: 40px;
+}
+.ms_nav_wrapper ul>li>a>span.icon {
+	margin-right: 10px;
+	display: inline-block;
+	-webkit-transform: translate(0, -2px);
+	-moz-transform: translate(0, -2px);
+	-ms-transform: translate(0, -2px);
+	transform: translate(0, -2px);
+}
+.ms_nav_wrapper span.nav_icon>span {
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	display: inline-block;
+	color: #3498db;
+	font-size: 24px;
+}
+.ms_nav_wrapper ul li a span.nav_icon {
+	margin-right: 0;
+}
+.ms_nav_wrapper ul li a:hover span.nav_icon>.icon.icon_discover,
+.ms_nav_wrapper ul li a.active span.nav_icon>.icon.icon_discover {
+	background-position: 0px -28px;
+}
+.ms_nav_wrapper ul li a:hover span.nav_icon>.icon.icon_albums,
+.ms_nav_wrapper ul li a.active span.nav_icon>.icon.icon_albums {
+	background-position: -30px -28px;
+}
+.ms_nav_wrapper ul li a:hover span.nav_icon>.icon.icon_artists,
+.ms_nav_wrapper ul li a.active span.nav_icon>.icon.icon_artists {
+	background-position: -60px -28px;
+}
+.ms_nav_wrapper ul li a:hover span.nav_icon>.icon.icon_genres,
+.ms_nav_wrapper ul li a.active span.nav_icon>.icon.icon_genres {
+	background-position: -90px -28px;
+}
+.ms_nav_wrapper ul li a:hover span.nav_icon>.icon.icon_tracks,
+.icon.icon_genres,
+.ms_nav_wrapper ul li a.active span.nav_icon>.icon.icon_tracks {
+	background-position: -120px -28px;
+}
+.ms_nav_wrapper ul li a:hover span.nav_icon>.icon.icon_music,
+.icon.icon_genres,
+.ms_nav_wrapper ul li a.active span.nav_icon>.icon.icon_music {
+	background-position: -150px -28px;
+}
+.ms_nav_wrapper ul li a:hover span.nav_icon>.icon.icon_station,
+.icon.icon_genres,
+.ms_nav_wrapper ul li a.active span.nav_icon>.icon.icon_station {
+	background-position: -180px -28px;
+}
+.ms_nav_wrapper ul li a:hover span.nav_icon>.icon.icon_download,
+.icon.icon_genres,
+.ms_nav_wrapper ul li a.active span.nav_icon>.icon.icon_download {
+	background-position: -210px -28px;
+}
+.ms_nav_wrapper ul li a:hover span.nav_icon>.icon.icon_purchased,
+.icon.icon_genres,
+.ms_nav_wrapper ul li a.active span.nav_icon>.icon.icon_purchased {
+	background-position: -240px -28px;
+}
+.ms_nav_wrapper ul li a:hover span.nav_icon>.icon.icon_favourite,
+.icon.icon_genres,
+.ms_nav_wrapper ul li a.active span.nav_icon>.icon.icon_favourite {
+	background-position: -270px -28px;
+}
+.ms_nav_wrapper ul li a:hover span.nav_icon>.icon.icon_history,
+.icon.icon_genres,
+.ms_nav_wrapper ul li a.active span.nav_icon>.icon.icon_history {
+	background-position: -300px -28px;
+}
+.ms_nav_wrapper ul li a:hover span.nav_icon>.icon.icon_fe_playlist,
+.icon.icon_genres,
+.ms_nav_wrapper ul li a.active span.nav_icon>.icon.icon_fe_playlist {
+	background-position: -328px -28px;
+}
+.ms_nav_wrapper ul li a:hover span.nav_icon>.icon.icon_c_playlist,
+.icon.icon_genres,
+.ms_nav_wrapper ul li a.active span.nav_icon>.icon.icon_c_playlist {
+	background-position: -360px -28px;
+}
+span.nav_text {
+	display: block;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 10px;
+	left: 100%;
+	background-color: #32353d;
+	padding: 0px 12px;
+	white-space: nowrap;
+}
+.shop_body.sidebar_hide .wx_sidebar_wrapper .wx_sidebar_nav ul>li>a>.nav_text:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -5px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-right: 5px solid #32353d;
+}
+.ms_nav_wrapper span.nav_icon>.icon.icon_discover {
+	background-position: 0px 0px;
+}
+.ms_nav_wrapper span.nav_icon>.icon.icon_albums {
+	background-position: -30px 2px;
+}
+.ms_nav_wrapper span.nav_icon>.icon.icon_artists {
+	background-position: -60px 2px;
+}
+.ms_nav_wrapper span.nav_icon>.icon.icon_genres {
+	background-position: -90px 2px;
+}
+.ms_nav_wrapper span.nav_icon>.icon.icon_tracks {
+	background-position: -120px 2px;
+}
+.ms_nav_wrapper span.nav_icon>.icon.icon_music {
+	background-position: -150px 2px;
+}
+.ms_nav_wrapper span.nav_icon>.icon.icon_station {
+	background-position: -180px 2px;
+}
+.ms_nav_wrapper span.nav_icon>.icon.icon_download {
+	background-position: -210px 2px;
+}
+.ms_nav_wrapper span.nav_icon>.icon.icon_purchased {
+	background-position: -240px 2px;
+}
+.ms_nav_wrapper span.nav_icon>.icon.icon_favourite {
+	background-position: -270px 2px;
+}
+.ms_nav_wrapper span.nav_icon>.icon.icon_history {
+	background-position: -300px 2px;
+}
+.ms_nav_wrapper span.nav_icon>.icon.icon_fe_playlist {
+	background-position: -328px 2px;
+}
+.ms_nav_wrapper span.nav_icon>.icon.icon_c_playlist {
+	background-position: -360px 2px;
+}
+.ms_sidemenu_inner {
+	width: 80px;
+	background-color: #273755;
+	height: 100%;
+	z-index: 1;
+}
+
+
+.ms_sidemenu_wrapper.open_menu {
+	width: 200px;
+}
+.ms_logo_open {
+	display: none;
+}
+.ms_sidemenu_wrapper.open_menu .ms_logo_open {
+	display: block;
+}
+.ms_sidemenu_wrapper.open_menu .ms_logo {
+	display: none;
+}
+
+.ms_sidemenu_wrapper.open_menu .ms_logo_open a img{
+	margin-left: -20px;
+}
+
+.ms_sidemenu_wrapper.open_menu .ms_sidemenu_inner {
+	width: 200px;
+}
+.ms_sidemenu_wrapper.open_menu span.nav_text {
+	opacity: 1;
+	display: inline-block;
+	visibility: visible;
+	position: relative;
+	left: auto;
+	top: 0;
+	background-color: transparent;
+	vertical-align: bottom;
+}
+.ms_sidemenu_wrapper.open_menu a {
+	text-align: left;
+	padding: 9px 20px;
+}
+.ms_sidemenu_wrapper.open_menu span {
+	display: inline-block;
+}
+
+/*==== Header Css Start ====*/
+.ms_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 12vh;
+	width: 100%;
+	position: fixed;
+	background-color: #273755;
+	left: 80px;
+	top: 0;
+	z-index: 100;
+	/* backface-visibility: hidden; */
+
+}
+
+/* Style the search field */
+form.search-area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 60px;
+}
+form.search-area input[type=text] {
+	padding: 8px;
+	height: 30px;
+	font-size: 13px;
+	border: none;
+	width: 100px;
+	background: #b1d4e0;
+	border-radius: 5px 0 0px 5px;
+  }
+  
+  /* Style the submit button */
+  form.search-area button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	background: #3498db;
+	color: #b1d4e0;
+	font-size: 15px;
+	border: none;
+	border-left: none; /* Prevent double borders */
+	cursor: pointer;
+	border-radius: 0 5px 5px 0;
+  }
+  
+  form.search-area button:hover {
+	background: #0b7dda;
+  }
+.ms_top_search {
+	width: auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid red;
+	padding: 3px;
+}
+.search_icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 40px;
+	line-height: 40px;
+	background-color: #3498db;
+	border-radius: 0px 5px 5px 0px;
+	padding: 0px 10px;
+	cursor: pointer;
+}
+.ms_top_search .form-control {
+	padding: 0px 10px;
+	font-size: 14px;
+	line-height: 40px;
+	color: #777;
+	border: none;
+	border-radius: 5px;
+}
+
+.ms_top_left a img{
+	height: 12vh;
+	width: auto;
+}
+
+.ms_top_left .kayate-logo span{
+	color: #3498db;
+}
+
+.ms_top_trend {
+	float: left;
+	line-height: 40px;
+	padding-left: 50px;
+}
+
+.ms_top_trend a {
+	color: #b1d4e0;
+}
+.ms_top_right {
+	line-height: 40px;
+}
+.ms_top_right .ms_top_lang {
+	color: #b1d4e0;
+	text-transform: capitalize;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	padding-right: 23px;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+.ms_top_right .ms_top_lang:hover {
+	color: #3498db;
+}
+.ms_top_right .ms_top_lang:after {
+	position: absolute;
+	background-color: #cdcdcd;
+	height: 30px;
+	width: 2px;
+	content: "";
+	right: 6px;
+	top: 6px;
+}
+.ms_btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #3498db;
+	color: #b1d4e0;
+	display: inline-block;
+	text-transform: capitalize;
+	width: 100px;
+	border-radius: 2px;
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+}
+.ms_btn:hover {
+	color: #b1d4e0;
+	box-shadow: 0px 0px 20px 0px #3498db;
+}
+.ms_top_right .ms_top_lang img {
+	margin-left: 15px;
+	margin-right: 6px;
+}
+ul.ms_lang_box {
+	padding: 5px 0px;
+	margin: 0px;
+	list-style: none;
+	background-color: #3498db;
+	width: 100%;
+	max-width: 120px;
+	line-height: initial;
+	position: absolute;
+	top: 100%;
+	opacity: 0;
+	border-radius: 4px;
+	transform: translateY(25px);
+	-webkit-transform: translateY(25px);
+	-moz-transform: translateY(25px);
+	-ms-transform: translateY(25px);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+.ms_top_right .ms_top_lang:hover ul.ms_lang_box {
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	opacity: 1;
+}
+ul.ms_lang_box li {
+	width: 100%;
+	display: block;
+}
+ul.ms_lang_box li a {
+	color: #b1d4e0;
+	width: 100%;
+	display: block;
+	padding: 5px 15px;
+}
+ul.ms_lang_box li a:hover {
+	padding-left: 20px;
+}
+ul.ms_lang_box:after {
+	content: "";
+	position: absolute;
+	top: -8px;
+	right: 2px;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #b1d4e0;
+}
+
+
+@media(max-width:1800px) {
+
+	body {
+		font-size: 15px;
+	}
+	.ms_profile .ms_top_btn {
+		width: auto;
+		display: flex;
+		place-content: flex-end;
+	}
+
+	.ms_profile .ms_top_btn .ms_btn {
+		margin-top: 6px;
+	}
+	.ms_profile .ms_top_right .ms_top_lang:after {
+		display: none;
+	}
+	
+	form.search-area {
+	    margin-right: 100px;
+	}
+	form.search-area input[type=text] {
+        padding: 10px;
+        width: 250px;
+ 	 }
+}
+@media(min-width:1400px) and (max-width:1800px) {
+	ul.more_option {
+		max-width: 135px;
+		padding: 10px 0px 10px 12px;
+	}
+	ul.more_option li a {
+		padding-bottom: 0;
+		font-size: 11px;
+		line-height: 24px;
+	}
+
+}
+@media(max-width:1700px) {
+	.ms_top_search {
+		max-width: 20%;
+	}
+	.ms_top_trend {
+		padding-left: 35px;
+	}
+	
+	.ms_rcnt_box_text h3,
+	.w_top_song .w_tp_song_name h3 {
+		font-size: 14px;
+    }
+    
+	.footer_box {
+		padding-right: 20px;
+	}
+}
+@media(max-width:1600px) {
+
+	.ms_top_right .ms_top_lang:after {
+		display: none;
+	}
+	span.ovrly_text1 a {
+		font-size: 13px;
+	}
+	.ovrly_text_div {
+		padding: 0px 10px;
+	}
+	span.ovrly_text2 a {
+		font-size: 13px;
+	}
+	.ms_header {
+		/* padding: 20px 30px; */
+	}
+	.ms_top_right .ms_top_lang {
+		padding-right: 5px;
+	}
+	.ms_profile .ms_top_btn {
+		text-align: right;
+	}
+	.ms_profile_box {
+		width: 80%;
+	}
+	.jp-progress-container.flex-item {
+		max-width: 45%;
+	}
+	.ms_play_song {
+		width: 310px;
+	}
+	.jp-type-playlist {
+		padding-left: 340px;
+	}
+	.ms_releases_wrapper .w_top_song {
+		padding-left: 10px;
+	}
+	.album_list_wrapper>ul>li>a {
+		font-size: 14px;
+	}
+	.ms_free_download.ms_purchase_wrapper .album_list_wrapper ul.more_option {
+		right: 65px;
+		top: 15px;
+		width: 200px;
+	}
+	.ms_input_group2 .ms_input button.ms_btn {
+		padding: 5px 25px;
+		height: 37px;
+	}
+	.ms_profile .ms_top_btn {
+		width: auto;
+	}
+	.ms_profile .ms_top_btn {
+		text-align: left;
+	}
+	.ms_top_artist ul.more_option li a .opt_icon {
+		display: none;
+	}
+	.ms_top_artist ul.more_option {
+		max-width: 111px;
+	}
+	.weekly_left span.w_top_no {
+		font-size: 40px;
+	}
+	.w_top_song {
+		padding-left: 10px;
+	}
+	.ms_weekly_box ul.more_option {
+		right: 30px;
+		top: 11px;
+	}
+	.ms_top_trend {
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		width: 35%;
+	}
+	.album_list_wrapper ul.more_option {
+		right: 105px;
+	}
+	.ms_input_group {
+		padding-right: 53px;
+	}
+	.ms_input_group1 {
+		width: 45%;
+	}
+	.ms_input_group2 {
+		width: 16%;
+	}
+}
+@media(max-width:1400px) {
+	
+	.ms_top_artist ul.more_option {
+		padding: 10px;
+		font-size: 11px;
+		right: 40px;
+	}
+	.ms_top_artist ul.more_option li a {
+		padding-bottom: 5px;
+		font-size: 11px;
+		line-height: 19px;
+	}
+	.ms_admin_name:before {
+		left: -14px;
+	}
+	.ms_input_group2 .ms_input button.ms_btn {
+		padding: 5px 14px;
+		margin-left: 19px;
+	}
+	.ms_banner_img {
+		max-width: 470px;
+	}
+	.banner-content {
+		width: 100%;
+	}
+	.banner-content h1 {
+		font-size: 29px;
+	}
+	.ms_play_song {
+		width: 281px;
+		padding: 15px 0px 15px 25px;
+	}
+	.weekly_left span.w_top_no {
+		width: 70px;
+	}
+	.w_top_song {
+		padding-left: 0px;
+	}
+	.w_top_song .w_tp_song_name {
+		padding-left: 15px;
+	}
+	.w_song_time {
+		padding-right: 30px;
+	}
+	.ms_releases_wrapper .w_top_song {
+		padding-left: 0px;
+	}
+	.ms_genres_box {
+		margin-bottom: 20px;
+	}
+	.jp-type-playlist {
+		padding-left: 300px;
+		display: inline-block;
+		width: 89%;
+		padding-right: 0;
+	}
+	.jp-volume-controls.flex-item {
+		margin-left: 30px;
+	}
+	.knob-container .knob-wrapper-outer .knob-wrapper .round {
+		top: 16rem;
+		left: 17rem;
+		right: 18rem;
+	}
+	.knob-container .knob-wrapper-outer .knob-wrapper {
+		width: 55px;
+	}
+	.footer_box {
+		padding-right: 0px;
+	}
+	.ms_weekly_box {
+		padding: 20px 0px 20px 0px;
+		border-bottom: 1px solid #252b4d;
+	}
+	.ms_weekly_inner .ms_divider {
+		display: none;
+	}
+	.ms_weekly_box ul.more_option {
+		/* right: 27px; */
+		top: 11px;
+	}
+	.jp_queue_wrapper {
+		padding-right: 15px;
+		margin-top: 22px;
+	}
+	.jp-progress-container.flex-item {
+		max-width: 31%;
+	}
+	.ms_free_download.ms_purchase_wrapper .album_list_wrapper>ul>li {
+		font-size: 14px;
+	}
+	.ms_free_download .album_list_wrapper>ul>li {
+		width: 13%;
+	}
+	.ms_album_single_wrapper {
+		padding-left: 160px;
+	}
+	.album_list_wrapper>ul>li>a {
+		font-size: 13px;
+	}
+	.album_list_wrapper {
+		width: 100%;
+	}
+	.album_list_wrapper ul.more_option {
+		font-size: 12px;
+		padding-left: 12px;
+	}
+	.slider_nav_prev {
+		left: 0;
+	}
+	.slider_nav_next {
+		right: 0;
+	}
+	.ms_footer_inner {
+		margin: 20px 120px 20px 160px;
+		
+	}
+	.ms_weekly_wrapper .col-lg-4.col-md-12 {
+		padding-right: 20px;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.ms_releases_wrapper .slider_nav_prev,
+	.ms_releases_wrapper .slider_nav_next {
+		right: 0px;
+	}
+	.ms_input_group2 .ms_input button.ms_btn {
+		font-size: 13px;
+	}
+	.ms_input_group2 {
+		width: 19%;
+	}
+	.ms_input_group {
+		padding-right: 47px;
+	}
+	.ms_input_group1 {
+		width: 45%;
+	}
+}
+@media(max-width:1200px) {
+	.main-container.ms_profile .ms_top_trend {
+		width: 25%;
+	}
+	.ms_rcnt_box_text h3,
+	.w_top_song .w_tp_song_name h3 {
+		font-size: 14px;
+	}
+	.ms_admin_name:before {
+		display: none;
+	}
+	.ms_rcnt_box .ms_play_icon:hover:after,
+	.ms_genres_box .ms_play_icon:hover:after {
+		opacity: 0;
+	}
+	.ms_free_download.ms_purchase_wrapper .album_list_wrapper>ul>li {
+		width: 11%;
+	}
+	.ms_header {
+		/* padding: 15px 20px 15px 30px; */
+	}
+	.ms_top_search {
+		max-width: 25%;
+	}
+	.ms_banner_img {
+		max-width: 50%;
+	}
+	.banner-content h1 {
+		font-size: 27px;
+	}
+	.banner-content {
+		width: 100%;
+	}
+	.banner-section{
+		left: 0px;
+	}
+	.banner-content .banner-btn .ms_btn {
+		/* max-width: 125px; */
+	}
+	.jp-type-playlist {
+		padding-left: 270px;
+		width: 87%;
+	}
+	.knob-container .knob-wrapper-outer .knob-wrapper {
+		width: 50px;
+	}
+	.jp-progress-container.flex-item {
+		max-width: 20%;
+	}
+	.knob-container .knob-wrapper-outer .knob-wrapper .round {
+		top: 13rem;
+		left: 15rem;
+		right: 18rem;
+	}
+	.jp-toggles.flex-item {
+		flex-basis: 120px;
+	}
+	.jp-volume-controls.flex-item {
+		flex-basis: 55px;
+	}
+	.ms_play_song {
+		width: 250px;
+		padding: 10px 0px 10px 15px;
+		height: 70px;
+	}
+	.jp-track-name {
+		font-size: 13px;
+	}
+	.play_song_options {
+		top: 23px;
+	}
+	.play_song_options ul li a {
+		font-size: 14px;
+		padding: 8px 10px;
+	}
+	.footer_box {
+		font-size: 14px;
+	}
+	.ms_footer_inner {
+		margin: 0;
+		flex-direction: column;
+	}
+
+	.foo_sharing h1.footer_title:after {
+		left: 100px;
+		
+	}
+	.footer_box.footer_contacts ul.foo_con_info li .foo_con_icon {
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+	}
+	.weekly_left span.w_top_no {
+		font-size: 25px;
+	}
+	.w_top_song .w_tp_song_img {
+		width: 45px;
+	}
+	.w_top_song .w_tp_song_name {
+		width: calc(100% - 45px);
+	}
+	.weekly_left span.w_top_no {
+		width: 40px;
+	}
+	.ms_sidemenu_wrapper {
+		width: 90px;
+	}
+	.ms_rcnt_box .ms_play_icon img,
+	.ms_genres_box .ms_play_icon img {
+		width: 30px;
+		height: 30px;
+	}
+	.ms_more_icon {
+		top: 0;
+	}
+	.ovrly_text_div {
+		bottom: 0;
+	}
+	.ms_genres_box:hover .ovrly_text_div {
+		bottom: 0;
+		display: none;
+	}
+	.ms_upload_box h2 {
+		font-size: 22px;
+	}
+	.ms_weekly_wrapper {
+		margin: 160px 15px 80px 15px;
+	}
+	.ms_weekly_box {
+		padding: 25px 0px 20px 0px;
+		border-bottom: 1px solid #252b4d;
+	}
+	.ms_weekly_inner .ms_divider {
+		display: none;
+	}
+	.padder_top80 {
+		/* padding-top: 70px !important; */
+	}
+	.ms_weekly_wrapper.ms_free_music .weekly_right {
+		right: 0;
+		bottom: 23px;
+		left: auto;
+	}
+	.ms_weekly_wrapper.ms_free_music ul.more_option {
+		right: -13px;
+		top: 17px;
+	}
+	.ms_weekly_wrapper.ms_free_music ul.more_option:after {
+		display: none;
+	}
+	.album_single_text {
+		padding-top: 0;
+	}
+	a.ms_btn.play_btn {
+		width: 130px;
+		padding: 0px;
+		font-size: 14px;
+		line-height: 44px;
+		padding: 0px 20px;
+	}
+	.w_top_song .w_tp_song_name h3 {
+		font-size: 14px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		width: 85px;
+	}
+	.slider_nav_next {
+		right: 0;
+	}
+	.slider_nav_prev {
+		left: 0px;
+	}
+	.ms_radio_wrapper {
+		margin: 60px 15px;
+	}
+	.ms_featured_slider,
+	.ms_releases_wrapper {
+		margin: 80px 15px;
+	}
+	.featured-album  {
+		margin: 160px 120px 80px 160px;
+	}
+	.ms_footer_wrapper {
+		padding-left: 26px;
+	}
+	.album_single_data ul.more_option {
+		top: 0;
+	}
+	.album_list_wrapper ul.more_option {
+		right: 100px;
+	}
+	.ms_weekly_wrapper .col-lg-4.col-md-12 {
+		padding-right: 0;
+	}
+	.ms_top_trend {
+		width: 30%;
+	}
+	.ms_top_artist {
+		padding: 0px 10px;
+	}
+}
+@media(min-width:992px) and (max-width:1200px) {
+	.ms_top_artist .col-lg-2.col-md-6 {
+		flex: 33.33%;
+		-ms-flex: 33.33%;
+		max-width: 33.33%;
+	}
+	.banner-section{
+		left: 90px;
+	}
+	
+}
+@media(max-width:1024px) {
+	.main-container.ms_profile .ms_top_trend {
+		display: none;
+	}
+	.ms_profile_wrapper,
+	.ms_account_wrapper {
+		padding-left: 90px;
+	}
+	.ms_admin_name:before {
+		display: none;
+	}
+	.jp-toggles.flex-item button {
+		margin: 5px 7px 0px 7px;
+	}
+	.ms_player_close {
+		top: -27px;
+	}
+	.ms_player_wrapper.close_player {
+		bottom: -70px;
+	}
+	.ms_rcnt_box .ms_play_icon:after,
+	.ms_genres_box .ms_play_icon:after {
+		display: none;
+	}
+	.weekly_left span.w_top_no {
+		width: 50px;
+	}
+	.ms_rcnt_box_text h3,
+	.w_top_song .w_tp_song_name h3 {
+		font-size: 13px;
+	}
+	.ms_rcnt_box_text p,
+	.w_top_song .w_tp_song_name p {
+		font-size: 12px;
+	}
+	.album_list_wrapper ul.more_option {
+		right: 80px;
+	}
+	.ms_top_right .ms_top_lang:after {
+		display: none;
+	}
+	.ms_cmnt_form .ms_input_group {
+		width: 35%;
+		padding-right: 23px;
+	}
+	.ms_input_group1 {
+		width: 40%;
+	}
+	.ms_input_group2 {
+		width: 25%;
+	}
+	.ms_input_group2 .ms_input button.ms_btn {
+		margin-left: 20px;
+	}
+	.ms_blog_wrapper {
+		margin: 20px 15px;
+	}
+	.album_inner_list {
+		width: 778px;
+		overflow: scroll;
+		overflow-y: hidden;
+		overflow-x: scroll;
+	}
+	.ms_album_single_wrapper .album_inner_list {
+		width: 762px;
+	}
+	.ms_album_single_wrapper .album_list_wrapper {
+		width: 120%;
+		padding-bottom: 10px;
+	}
+	.album_single_data ul.more_option {
+		top: -5px;
+	}
+	.foo_sharing ul {
+		padding-left: 0px;
+	}
+	.jp_quality_optn.custom_select {
+		margin-left: -3px;
+	}
+	.ms_free_download .album_list_wrapper {
+		width: 1000px;
+		margin-top: -3px;
+		padding-bottom: 15px;
+	}
+	.album_inner_list::-webkit-scrollbar {
+		height: 4px;
+	}
+	.album_inner_list::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 3px #3498db;
+	}
+	.album_inner_list::-webkit-scrollbar-thumb {
+		background-color: #3498db;
+		outline: 2px solid #3498db;
+	}
+}
+@media(min-width:991px) and (max-width:1199px) {
+	ul.more_option {
+		max-width: 98px;
+		padding: 10px 0px 10px 12px;
+	}
+	.jp-playlist ul.more_option {
+		top: 90%;
+		right: 30px;
+		text-align: center;
+		max-width: 180px;
+		padding: 2px 10px;
+	}
+	.jp-playlist ul.more_option li a .opt_icon {
+		display: block;
+	}
+	ul.more_option li a .opt_icon {
+		display: none;
+	}
+	ul.more_option li a {
+		padding-bottom: 0;
+		font-size: 11px;
+		line-height: 21px;
+	}
+	.ms_player_wrapper.close_player {
+		bottom: -72px;
+	}
+}
+@media(max-width:992px) {
+	.padder_top90 {
+		padding-top: 50px !important;
+	}
+	.w_top_song .w_tp_song_name {
+		padding-left: 12px;
+	}
+	.ms_top_right .ms_top_lang {
+		top: 8px;
+	}
+	.ms_profile .ms_top_btn .ms_btn {
+		margin-top: 8px;
+	}
+	.main-container.ms_profile .ms_top_lang {
+		top: 18px;
+	}
+	.ms_admin_name span.ms_pro_name {
+		top: 0px;
+	}
+	.ms_nav_wrapper ul.nav_playlist {
+		margin-bottom: 10px;
+	}
+	.ms_rcnt_box_img img {
+		width: 100%;
+	}
+	.ms_free_download.ms_purchase_wrapper .album_list_wrapper>ul>li {
+		width: 11%;
+		font-size: 10px;
+	}
+	.ms_free_download.ms_purchase_wrapper .album_list_wrapper>ul>li>a {
+		font-size: 12px;
+	}
+	.banner-content {
+		width: 100%;
+	}
+	.ms_banner_img {
+		max-width: 100%;
+	}
+	.jp-type-playlist {
+		width: 74%;
+		padding-bottom: 10px;
+		padding-left: 0;
+		margin: 0 auto;
+		display: block;
+	}
+	.ms_play_song {
+		width: 100px;
+		padding: 13px 0px 10px 15px;
+		height: 70px;
+	}
+	.jp_queue_wrapper {
+		padding-right: 25px;
+		margin-top: 20px;
+	}
+	.jp-track-name {
+		font-size: 13px;
+	}
+	.play_song_name span.que_img {
+		width: 40px;
+	}
+	.play_song_name span.que_img img {
+		max-width: 100%;
+	}
+	.play_song_name .que_data {
+		display: none;
+	}
+	.jp-gui.jp-interface.flex-wrap {
+		top: 0px;
+	}
+	.jp-type-playlist .nice-select .list {
+		bottom: 175%;
+	}
+	.ms_top_search .form-control {
+		height: 30px;
+		line-height: 47px;
+	}
+	span.search_icon {
+		height: 30px;
+		line-height: 32px;
+	}
+	.ms_header {
+		/* padding: 15px 30px 10px; */
+	}
+	.ms_top_trend {
+		display: none;
+	}
+	.ms_player_close {
+		top: -27px;
+	}
+	.ms_register_popup div.modal {
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+	}
+	.ms_register_img {
+		width: 50%;
+	}
+	.ms_register_form {
+		width: calc(100% - 50%);
+		padding-left: 30px;
+	}
+	.ms_register_popup .modal-content {
+		padding: 55px 30px;
+	}
+	.ms_upload_box {
+		width: 80%;
+	}
+	.ms_upload_box h2 {
+		font-size: 20px;
+	}
+	.ms_blog_img img {
+		width: 100%;
+	}
+}
+@media(max-width:991px) {
+	.ms_blog_wrapper .ms_blog_section {
+		margin-bottom: 30px;
+	}
+
+	.ms_genres_box:hover .ovrly_text_div {
+		bottom: 20px;
+		display: block;
+		padding: 0px 10px;
+	}
+	.ms_header {
+		/* padding: 10px 30px 10px; */
+	}
+	.ms_top_right {
+		/* line-height: 1;
+		padding-right: 50px; */
+	}
+	.ms_album_single_wrapper .album_inner_list {
+		width: 100%;
+	}
+	.ms_footer_wrapper {
+		padding: 0px 27px;
+	}
+	.ms_copyright {
+		padding: 0px 0px 50px 0px;
+	}
+	.ms_top_artist ul.more_option {
+		max-width: 150px;
+	}
+	.ms_top_artist ul.more_option li a {
+		font-size: 13px;
+	}
+	.ms_logo_inner {
+		min-height: 1220px;
+	}
+	.ms_nav_wrapper {
+		top: 140px;
+	}
+	.ms_upload_wrapper {
+		padding-left: 0px;
+	}
+	.ms_profile_box {
+		margin-bottom: 0;
+	}
+	.ms_profile_wrapper,
+	.ms_account_wrapper {
+		padding-left: 0;
+	}
+	.ms_top_artist .container-fluid {
+		padding-right: 0;
+	}
+	.ms_blog_single_wrapper {
+		margin: 30px 15px;
+	}
+	.ms_blog_wrapper {
+		margin: 20px 15px;
+	}
+	.ms_input_group1 {
+		width: 54%;
+	}
+	.ms_cmnt_form .ms_input_group {
+		width: 44%;
+	}
+	.foo_sharing ul {
+		padding-left: 20px;
+	}
+	.ms_cmnt_wrapper {
+		padding-left: 16px;
+	}
+	.ms_test_wrapper {
+		padding-left: 20px;
+	}
+	.album_inner_list {
+		width: 98%;
+		padding-left: 3px;
+	}
+	.ms_free_download .album_list_wrapper {
+		width: 145%;
+		margin-top: -3px;
+		padding-bottom: 15px;
+	}
+	.ms_free_download {
+		padding-left: 15px;
+	}
+	.ms_footer_logo {
+		padding-left: 0;
+		padding-top: 40px;
+	}
+	.ms_footer_inner {
+		margin: 0;
+	}
+	.foo_sharing h1.footer_title:after {
+		left: 100px;
+		
+	}
+	.ms_profile .ms_top_right {
+		/* text-align: center; */
+	}
+	.ms_profile .ms_top_btn {
+		text-align: center;
+		width: auto;
+		margin-top: 0px;
+		float: none;
+		margin-left: 0;
+		justify-content: center;
+		display: inline-block;
+	}
+	.main-container.ms_profile .ms_header {
+		/* padding: 10px 35px 10px; */
+	}
+	
+
+	ul.pro_dropdown_menu li a {
+		text-align: left;
+	}
+	.ms_acc_overview {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	.ms_album_single_wrapper {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.album_single_data {
+		width: 100%;
+	}
+	.album_btn a.ms_btn {
+		height: 40px;
+		line-height: 45px;
+		padding: 0px 25px;
+		font-size: 12px;
+	}
+	.album_single_text {
+		padding-left: 30px;
+	}
+	.play_song_options ul li a {
+		font-size: 10px;
+	}
+	.album_list_wrapper span.opt_icon {
+		display: none;
+	}
+	.album_list_wrapper ul.more_option li a {
+		padding-bottom: 4px;
+	}
+	.album_list_wrapper ul.more_option {
+		right: 90px;
+	}
+	.album_single_data ul.more_option {
+		top: -6px;
+		right: 35px;
+	}
+	.ms_cmnt_form .ms_input_group {
+		padding-right: 20px;
+	}
+	.ms_input_group2 .ms_input button.ms_btn {
+		margin-left: 0;
+		padding: 5px 14px;
+		font-size: 15px;
+	}
+	.ms_input_group2 {
+		width: 100%;
+	}
+	.album_btn a.ms_btn {
+		height: 40px;
+		line-height: 45px;
+		padding: 0px 20px;
+		font-size: 12px;
+		width: auto;
+	}
+	.ms_plan_box .ms_plan_header:after {
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: #3498db;
+		box-shadow: inset 0px 3px 17px 0px rgba(0, 0, 0, 0.35);
+	}
+	.ms_plan_box .ms_plan_header {
+		padding: 40px 0px 40px;
+		border-radius: 15px 15px 0px 0px;
+	}
+	.ms_plan_box {
+		margin-bottom: 30px;
+	}
+	.ms_plan_box.paln_active {
+		top: 0px;
+	}
+	.ms_acc_ovrview_list {
+		width: 85%;
+	}
+	/** Menu Resposive Css **/
+
+
+	
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+
+	.padder_top80 {
+		/* padding-top: 50px !important; */
+	}
+
+	
+	.ms_top_right .ms_top_lang {
+		float: left;
+		position: relative;
+		top: 8px;
+	}
+	.ms_top_btn .ms_btn {
+		margin-left: 0px;
+	}
+	.ms_sidemenu_wrapper {
+		width: 250px;
+		left: -250px;
+		transition: all 0.5s ease-in-out;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-ms-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+	}
+
+	
+	span.nav_text {
+		opacity: 1;
+		display: inline-block;
+		visibility: visible;
+		position: relative;
+		left: auto;
+		top: 0;
+		background-color: transparent;
+		vertical-align: bottom;
+		padding: 0px 12px;
+	}
+	.ms_logo {
+		display: none !important;
+	}
+	.ms_logo_open {
+		display: block !important;
+	}
+	.ms_sidemenu_inner {
+		width: 200px;
+	}
+	.ms_weekly_wrapper {
+		margin: 160px 15px 80px 15px;
+		/* padding-right: 30px; */
+	}
+	.ms_sidemenu_wrapper.open_menu {
+		left: 0;
+	}
+	.ms_nav_wrapper ul li a {
+		padding: 9px 15px;
+	}
+	.ms_sidemenu_wrapper.open_menu a {
+		text-align: left;
+		padding: 9px 15px;
+	}
+	.ms_nav_wrapper ul li a {
+		text-align: left;
+	}
+	.ms_header {
+		left: 0px;
+	}
+	.ms_weekly_wrapper {
+		padding-right: 25px; 
+		margin: 160px 15px 80px 15px;
+	}
+	.video-section,
+	.ms_featured_slider,
+	.featured-album  {
+		margin: 160px 15px 80px 15px;
+	}
+
+	.video-section{
+		margin: 160px 15px 80px 15px;
+	}
+	.slider_nav_next {
+		right: 0px;
+	}
+	.slider_nav_prev {
+		left: 0px;
+	}
+	.weekly_left span.w_top_no {
+		width: 45px;
+	}
+	.ms_weekly_box {
+		min-height: auto;
+		padding: 25px 0px 21px 0px;
+		border-bottom: 1px solid #252b4d;
+	}
+	.ms_weekly_inner .ms_divider {
+		display: none;
+	}
+	.ms_releases_wrapper {
+		margin: 80px 15px;
+	}
+
+	.ms_releases_wrapper .slider_nav_prev,
+	.ms_releases_wrapper .slider_nav_next {
+		right: 14px;
+	}
+	.ms_genres_wrapper,
+	.ms_radio_wrapper {
+	margin: 60px 15px;
+	}
+	.modal-dialog {
+		max-width: 94%;
+	}
+	.jp-progress-container.flex-item {
+		max-width: 27%;
+	}
+	.main-container.ms_profile .ms_top_search {
+		position: relative;
+		top: 10px;
+	}
+}
+@media(max-width:900px) {
+	.jp-progress-container.flex-item {
+		max-width: 21%;
+	}
+	.jp_queue_wrapper {
+		padding-right: 10px;
+	}
+	.jp-controls.flex-item {
+		-ms-flex-preferred-size: 150px;
+		flex-basis: 130px;
+		padding-left: 10px;
+	}
+	.jp-volume-controls.flex-item {
+		margin-left: 15px;
+	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+}
+@media(max-width:815px) {
+	.ms_album_single_wrapper .album_inner_list {
+		width: 100%;
+	}
+	.ms_album_single_wrapper .album_list_wrapper {
+		width: 120%;
+		padding-bottom: 10px;
+	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+}
+@media(min-width:768px) and (max-width:991px) {
+	.ms_nav_wrapper {
+		bottom: 127px;
+	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+}
+@media(max-width:768px) {
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+	.jp-toggles.flex-item button {
+		margin: 5px 6px 0px 6px;
+	}
+	.modal-dialog {
+		width: 90%;
+	}
+	.ms_cmnt_form .ms_input_group {
+		width: 45%;
+	}
+	.ms_cmnt_form .ms_input_group1 {
+		width: 55%;
+	}
+	.ms_genres_wrapper {
+		margin-right: 15px;
+	}
+	.jp-progress-container.flex-item {
+		max-width: 20%;
+	}
+}
+@media(max-width:767px) {
+	.blog_single_content .ms_blog_title {
+		font-size: 19px;
+	}
+
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+	.ms_sidebar {
+		margin-top: 30px;
+	}
+	.ms_weekly_wrapper.ms_free_music ul.more_option {
+		right: 80px;
+		top: 30px;
+	}
+	.album_single_data {
+		text-align: center;
+	}
+	.ms_album_single_wrapper .album_list_wrapper {
+		width: 200%;
+	}
+	.ms_cmnt_wrapper {
+		padding-right: 15px;
+	}
+	.ms_cmnt_form .ms_input_group {
+		width: 100%;
+	}
+	.ms_cmnt_form .ms_input_group1 {
+		width: 100%;
+	}
+	.album_list_wrapper>ul>li {
+		margin-bottom: 10px;
+	}
+	ul.more_option:after {
+		display: none;
+	}
+	.ms_cmnt_form .ms_input_group {
+		padding-right: 0;
+		width: 100%;
+	}
+	.ms_input_group1 {
+		width: 100%;
+		padding-top: 20px;
+	}
+	.ms_test_wrapper {
+		margin-left: 0;
+		margin-right: 0px;
+	}
+	.album_list_wrapper>ul li.text-center {
+		text-align: left !important;
+	}
+	.album_single_img {
+		width: 100%;
+	}
+	.album_single_text {
+		width: 100%;
+		padding-left: 0px;
+		padding-top: 20px;
+	}
+	.ms_btn {
+		/* width: 85px;
+		margin-left: 5px; */
+	}
+	.ms_lang_popup .modal-dialog {
+		max-width: 100%;
+		width: 100%;
+		padding: 0px 25px;
+	}
+	div#lang_modal {
+		padding-right: 0px !important;
+	}
+	.banner-content h1 {
+		font-size: 23px;
+	}
+	.banner-content .banner-btn .ms_btn {
+		/* font-size: 13px; */
+	}
+	.jp_quality_optn.custom_select {
+		display: none;
+	}
+	.jp-volume-controls.flex-item {
+		display: none;
+	}
+	.jp-toggles.flex-item {
+		display: none;
+	}
+	.ms_releases_wrapper {
+		margin: 80px 15px;
+	}
+	.ms_play_song {
+		padding: 14px 0px 10px 15px;
+		height: 70px;
+	}
+	.jp_queue_wrapper {
+		margin: 20px 0px;
+	}
+	.jp_queue_btn {
+		padding-bottom: 15px;
+	}
+	.ms_player_wrapper.close_player {
+		bottom: -70px;
+	}
+	.player_left.open_list .play_song_options {
+		display: none;
+	}
+	
+	.ms_releases_wrapper .slider_nav_prev {
+		right: 5%!important;
+		left: auto;
+	}
+	.ms_releases_wrapper .slider_nav_prev,
+	.ms_releases_wrapper .slider_nav_next {
+		top: 41%;
+	}
+	.ms_top_artist .container-fluid {
+		padding-right: 0;
+	}
+	.ms_upload_wrapper {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.ms_upload_box {
+		width: 100%;
+	}
+	.ms_upload_box h2 {
+		font-size: 16px;
+	}
+	.ms_pro_form {
+		width: 100%;
+		margin-top: 0;
+	}
+	.ms_pro_form .form-group {
+		width: 100%;
+	}
+	.ms_upload_btn a.ms_btn {
+		margin-bottom: 15px;
+	}
+	.modal-dialog {
+		max-width: 930px;
+		width: 90%;
+	}
+	.modal-content {
+		width: 100%;
+	}
+	.save_modal_btn a {
+		margin-bottom: 15px;
+	}
+	.ms_sidemenu_wrapper {
+		z-index: 10000;
+	}
+	.ms_player_wrapper {
+		z-index: 10000;
+		height: 70px;
+	}
+	.jp-gui.jp-interface.flex-wrap {
+		left: 20%;
+	}
+	.jp-type-playlist {
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		right: 0;
+		z-index: 1;
+		left: auto;
+	}
+	.jp_queue_wrapper span.que_text {
+		display: none;
+	}
+	.comment_head h3,
+	.comment_head p {
+		width: 100%;
+	}
+	/*----footer----*/
+	.ms_footer_inner {
+		margin: 0;
+	}
+	.ms_copyright {
+		padding: 0px 0px 20px 0px;
+	}
+	.ms_footer_wrapper {
+		margin-bottom: 70px;
+	}
+	.ms_footer_logo {
+		padding-left: 0;
+		padding-top: 50px;
+	}
+	h1.footer_title:after {
+		margin-left: -50px;
+		left: 50%;
+	}
+	.footer_box {
+		text-align: center;
+	}
+	.footer_box.footer_subscribe input.form-control {
+		width: 100%;
+	}
+	.footer_box.footer_contacts ul.foo_con_info li .foo_con_icon {
+		float: none;
+		margin-bottom: 15px;
+	}
+	.footer_box.footer_contacts ul.foo_con_info li {
+		margin-bottom: 30px;
+	}
+	.footer_box.footer_contacts ul.foo_con_info li .foo_con_data {
+		width: 100%;
+		padding-left: 0;
+	}
+	.foo_sharing {
+		width: auto;
+	}
+	.play_song_name .que_data {
+		display: none;
+	}
+	.ms_play_song {
+		width: 80px;
+	}
+	span.play-left-arrow {
+		display: none;
+	}
+	.jp-controls.flex-item {
+		-ms-flex-preferred-size: 150px;
+		flex-basis: 150px;
+		top: 6px;
+	}
+	.main-container.ms_profile .ms_header {
+		/* padding: 10px 30px 10px; */
+	}
+}
+@media (max-width: 767px) and (orientation: landscape) {
+	.ms_lang_popup .modal-content p {
+		margin-bottom: 10px;
+	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+	.ms_lang_popup .modal-content ul.lang_list li {
+		padding: 5px 20px;
+	}
+	.ms_lang_popup .modal-content {
+		padding: 15px 0px;
+	}
+	.ms_lang_popup .modal-content h1 {
+		font-size: 18px;
+		margin-bottom: 15px;
+		padding-bottom: 10px;
+	}
+	.jp-playlist {
+		overflow-y: scroll;
+		height: 300px;
+	}
+	.save_modal_btn a {
+		margin-bottom: 10px;
+	}
+	.ms_clear_modal .modal-dialog .modal-content,
+	.ms_save_modal .modal-dialog .modal-content {
+		padding: 15px 25px;
+	}
+	.modal-dialog button {
+		right: 5px;
+		top: 5px;
+	}
+	.save_modal_btn {
+		padding: 10px 0px;
+	}
+	button.save_btn {
+		margin-top: 0px;
+	}
+	.ms_save_email {
+		padding-bottom: 10px;
+	}
+	.ms_register_popup .modal-content {
+		padding: 55px 30px;
+		overflow-y: scroll;
+		height: 320px;
+	}
+	.ms_register_popup .modal-content::-webkit-scrollbar,
+	.ms_save_modal .modal-dialog::-webkit-scrollbar {
+		width: 5px;
+	}
+	.ms_register_popup .modal-content::-webkit-scrollbar-track,
+	.ms_save_modal .modal-dialog::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px #b1d4e0;
+	}
+	.ms_register_popup .modal-content::-webkit-scrollbar-thumb,
+	.ms_save_modal .modal-dialog::-webkit-scrollbar-thumb {
+		background-color: #b1d4e0;
+		outline: 2px solid #b1d4e0;
+	}
+	.ms_save_modal .modal-dialog {
+		max-width: 500px;
+		height: 300px;
+		overflow-y: scroll;
+	}
+	.jp-gui.jp-interface.flex-wrap {
+		left: 25%;
+	}
+}
+@media(max-width:667px) and (orientation:landscape) {
+	.modal-dialog button {
+		right: 5px;
+		top: 5px;
+	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+	.ms_lang_popup .modal-content {
+		padding: 15px 0px;
+		overflow-y: scroll;
+		height: 280px;
+		overflow-x: hidden;
+	}
+	.ms_lang_popup .modal-content::-webkit-scrollbar {
+		width: 5px;
+	}
+	.ms_lang_popup .modal-content::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px #b1d4e0;
+	}
+	.ms_lang_popup .modal-content::-webkit-scrollbar-thumb {
+		background-color: #b1d4e0;
+		outline: 2px solid #b1d4e0;
+	}
+}
+@media(max-width:775px) {
+	.ms_profile .ms_top_btn {
+		text-align: left;
+		width: auto;
+		margin-top: 5px;
+	}
+
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+}
+@media(max-width:667px) {
+	.swiper-button-prev4.slider_nav_prev {
+		top: 63%;
+	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+	.swiper-button-next4.slider_nav_next {
+		top: 63%;
+	}
+	.ms_register_popup .modal-content {
+		padding: 35px 30px;
+	}
+	.ms_register_img {
+		width: 40%;
+		margin-top: 40px;
+	}
+	.ms_register_form {
+		width: calc(100% - 40%);
+	}
+	.ms_header {
+		/* padding: 10px 30px 6px; */
+	}
+	.ms_top_search {
+		max-width: 33%;
+	}
+	.ms_top_right {
+		/* margin-top: 0px; */
+	}
+	.ms_top_btn .ms_btn {
+		position: relative;
+		width: 30px;
+		height: 30px;
+	}
+	.ms_profile .ms_top_btn .ms_btn {
+		margin-top: 6px;
+		width: auto;
+		height: 30px;
+		padding: 0px 15px;
+	}
+	.ms_profile .ms_top_right {
+		/* text-align: left; */
+	}
+	.ms_profile .ms_top_btn {
+		width: auto;
+	}
+	.ms_btn.reg_btn:after {
+		position: absolute;
+		content: "\f234";
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		font: normal normal normal 14px/1 FontAwesome;
+	}
+	.ms_btn.login_btn:after {
+		position: absolute;
+		content: "\f007";
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		font: normal normal normal 14px/1 FontAwesome;
+	}
+	.ms_top_btn .ms_btn span {
+		display: none;
+	}
+	.ms_top_right .ms_top_lang {
+		display: none;
+	}
+	.ms_free_download .album_list_wrapper {
+		width: 262%;
+	}
+	.ms_logo_inner {
+		min-height: 95px;
+	}
+	.ms_nav_wrapper {
+		top: 120px;
+	}
+}
+@media(max-width:600px) {
+	.ms_register_popup .modal-content {
+		padding: 30px 30px;
+	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+	.ms_register_img {
+		display: none;
+	}
+	.ms_register_form {
+		width: 100%;
+		padding-left: 0;
+	}
+	.ms_register_form h2 {
+		font-size: 20px;
+	}
+	.ms_acc_overview {
+		width: 100%;
+	}
+	.ms_acc_ovrview_list {
+		width: 90%;
+	}
+	.ms_acc_ovrview_list ul li {
+		font-size: 13px;
+		margin-bottom: 10px;
+	}
+	.album_list_wrapper>ul {
+		border-bottom: 1px solid #252b4d;
+	}
+	.ms_free_download .album_list_wrapper>ul>li.text-center {
+		text-align: left !important;
+	}
+	.pro-form-btn {
+		padding: 0px 10px;
+	}
+	.ms_pro_form .ms_btn {
+		width: 130px;
+		margin-left: 0px;
+	}
+	.jp-gui.jp-interface.flex-wrap {
+		left: 20%;
+	}
+	.ms_blog_wrapper {
+		margin: 20px 15px;
+	}
+	.main-container.ms_profile .ms_header {
+		/* padding: 10px 30px 5px; */
+	}
+	.main-container.ms_profile .ms_top_lang {
+		display: none;
+	}
+	
+	.ms_admin_name span.ms_pro_name {
+		width: 40px;
+		height: 40px;
+		line-height: 46px;
+	}
+	.ms_profile .ms_top_btn {
+		margin-top: 0px;
+	}
+	.main-container.ms_profile .ms_top_search {
+		top: 3px;
+	}
+	.ms_profile .ms_top_btn .ms_btn {
+		top: -3px;
+	}
+	
+
+}
+@media(max-width:480px) {
+	.ms_profile .ms_top_right {
+		/* width: 100%;
+		padding-top: 10px;
+		padding-right: 0px; */
+	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+	.album_single_data ul.more_option {
+		max-width: 150px;
+	}
+	.ms_album_single_wrapper {
+		padding-left: 40px;
+	}
+	.album_list_wrapper>ul>li {
+		width: 15%;
+	}
+	.main-container.ms_profile a.ms_btn {
+		width: auto;
+		padding: 0px 15px;
+	}
+	.main-container.ms_profile .ms_top_btn {
+		width: 100%;
+	}
+	
+	.ms_top_btn {
+		text-align: center;
+	}
+	.ms_top_btn .ms_btn {
+		position: relative;
+		width: 30px;
+		height: 30px;
+	}
+	.ms_btn.login_btn:after {
+		position: absolute;
+		content: "\f007";
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		font: normal normal normal 14px/1 FontAwesome;
+	}
+	.ms_btn.reg_btn:after {
+		position: absolute;
+		content: "\f234";
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		font: normal normal normal 14px/1 FontAwesome;
+	}
+	.ms_top_btn .ms_btn span {
+		display: none;
+	}
+	.ms_top_search {
+		max-width: 49%;
+	}
+	.ms_top_right {
+		/* margin-top: 0px; */
+	}
+
+	.ms_plan_box ul li {
+		font-size: 15px;
+		margin-bottom: 5px;
+	}
+	.ms_account_wrapper .section-headings {
+		margin-bottom: 35px;
+	}
+	.ms_plan_img {
+		width: 75px;
+		height: 75px;
+		line-height: 80px;
+	}
+	.ms_plan_img img {
+		width: 55px;
+	}
+	.plan_dolar {
+		width: 75px;
+		height: 75px;
+		line-height: 90px;
+		font-size: 26px;
+	}
+	.jp-playlist {
+		width: 80%;
+	}
+	.ms_footer_inner {
+		margin: 0;
+	}
+	.ms_copyright {
+		padding: 0px 0px 20px 0px;
+	}
+	.ms_upload_box {
+		padding: 50px 20px;
+	}
+	.ms_upload_btn a.ms_btn {
+		margin: 10px 0px;
+	}
+	.ms_blog_single_wrapper {
+		margin: 30px 15px;
+	}
+	.ms_comment_section .comment_info .comment_reply {
+		width: 100%;
+		margin-top: 10px;
+	}
+	.ms_comment_section .comment_img {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.ms_comment_section .comment_info {
+		padding-left: 0;
+	}
+	.ms_comment_section {
+		text-align: center;
+	}
+	.ms_free_download .album_list_wrapper {
+		width: 380%;
+	}
+	.ms_sidemenu_wrapper.open_menu .ms_sidemenu_inner {
+		width: 180px;
+	}
+	.ms_sidemenu_inner,
+	.ms_sidemenu_wrapper {
+		width: 180px !important
+	}
+	.ms_nav_wrapper ul li a {
+		font-size: 12px;
+	}
+	.ms_releases_wrapper .slider_nav_prev {
+		right: 10%!important;
+	}
+	ul.more_option {
+		max-width: 125px;
+		padding: 10px 10px;
+	}
+	ul.more_option li a {
+		padding-bottom: 5px;
+		font-size: 11px;
+		line-height: 19px;
+	}
+	.ms_top_search .form-control {
+		padding: 0px 15px;
+		font-size: 10px;
+	}
+	.ms_top_right {
+		/* padding-right: 40px; */
+	}
+	.weekly_left span.w_top_no {
+		width: 35px;
+	}
+	.jp-progress-container.flex-item {
+		max-width: 30%;
+	}
+}
+@media(max-width:414px) {
+	.ms_weekly_wrapper.ms_free_music .weekly_right .ms_more_icon {
+		padding-right: 2px;
+		display: inline-block;
+	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+
+	.ms_weekly_wrapper.ms_free_music {
+		padding-right: 0px;
+	}
+	.ms_weekly_wrapper.ms_free_music .w_song_time {
+		padding-right: 5px;
+	}
+	ul.more_option li a .opt_icon {
+		display: none;
+	}
+	.ms_weekly_wrapper.ms_free_music ul.more_option {
+		right: 60px;
+	}
+	.jp-type-playlist {
+		right: 16px;
+	}
+	.ms_pro_form .ms_btn {
+		margin-bottom: 10px;
+	}
+	.section-headings h1 {
+		width: 100%;
+	}
+	.album_btn a.ms_btn {
+		width: 100%;
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+	.ms_top_right .ms_top_lang {
+		width: 100%;
+		text-align: center;
+	}
+	.ms_top_right .ms_top_lang:after {
+		display: none;
+	}
+	.banner-content h1 {
+		font-size: 18px;
+	}
+	.banner-content .banner-btn .ms_btn {
+		/* margin-right: 0px;
+		max-width: 100px;
+		font-size: 12px; */
+	}
+	.weekly_right .ms_more_icon {
+		display: block;
+	}
+	.footer_box {
+		text-align: center;
+	}
+	.footer_box.footer_subscribe input.form-control {
+		width: 100%;
+	}
+	.footer_box a.foo_app_btn {
+		padding: 10px 0px 10px 0px;
+	}
+	.foo_sharing ul {
+		padding-left: 0;
+	}
+	.play_song_name .que_data {
+		display: none;
+	}
+	.share_title {
+		width: 100%;
+	}
+	.foo_sharing ul {
+		width: 100%;
+	}
+	.banner-btn {
+		/* text-align: center; */
+	}
+	
+	.banner-content .banner-btn .ms_btn {
+		/* margin-bottom: 10px; */
+	}
+	.main-container.ms_profile .ms_header {
+		/* padding: 20px 20px 10px; */
+	}
+	.create_playlist {
+		width: 100%;
+		height: 250px;
+	}
+}
+@media(max-width:320px) {
+	.ms_header {
+		/* padding: 10px 15px 6px; */
+	}
+	.ms_top_right {
+		/* padding-right: 32px; */
+	}
+	
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+	.ms_copyright {
+		overflow-x: hidden;
+	}
+	.ms_lang_popup .modal-content ul.lang_list li {
+		padding: 10px 10px;
+	}
+	.lang_list label {
+		font-size: 12px;
+	}
+	.ms_lang_popup .modal-content p {
+		font-size: 12px !important;
+	}
+	.banner-content .banner-btn .ms_btn {
+		/* margin-right: 0px;
+		margin-bottom: 15px; */
+	}
+	.video-section,
+	.ms_featured_slider,
+	.featured-album  {
+		margin: 160px 15px 80px 15px;
+	}
+
+	.video-section{
+		margin: 160px 15px 80px 15px;
+	}
+	.ms_sidemenu_wrapper.open_menu a {
+		padding: 9px 10px;
+	}
+	.ms_sidemenu_wrapper a {
+		font-size: 13px;
+	}
+	.ms_sidemenu_wrapper.open_menu,
+	.ms_sidemenu_wrapper.open_menu .ms_sidemenu_inner {
+		width: 180px;
+	}
+	.w_top_song .w_tp_song_img {
+		width: 100%;
+	}
+	.w_top_song .w_tp_song_name {
+		padding-left: 0;
+		margin-top: 15px;
+		width: 100%;
+	}
+	.weekly_right {
+		display: none;
+	}
+	.ms_weekly_box {
+		text-align: center;
+	}
+	.weekly_left span.w_top_no {
+		width: 100%;
+	}
+	.w_top_song .w_tp_song_name h3 {
+		width: 100%;
+	}
+	.ms_weekly_box {
+		padding: 20px 0px 21px 0px;
+	}
+	.weekly_left {
+		width: 100%;
+	}
+	.w_top_song {
+		width: 100%;
+	}
+	.ms_releases_wrapper .slider_nav_prev {
+		right: 12%!important;
+	}
+	.w_song_time {
+		float: left;
+	}
+	.section-headings h1 {
+		font-size: 15px;
+		width: 100%;
+	}
+	.ms_releases_wrapper {
+		margin: 80px 15px;
+	}
+	.ms_genres_wrapper,
+	.ms_radio_wrapper {
+		margin: 60px 15px;
+	}
+	.ms_footer_logo {
+		padding-left: 0px;
+	}
+	.ms_footer_inner {
+		margin: 0;
+	}
+	h1.footer_title {
+		font-size: 15px;
+	}
+	.footer_border {
+		width: 149px;
+	}
+	.ms_copyright {
+		padding: 0px 0px 20px 0px;
+	}
+	.jp-progress-container.flex-item {
+		display: none;
+	}
+	.foo_sharing ul {
+		padding-left: 0;
+	}
+	.foo_sharing ul li {
+		margin-bottom: 10px;
+	}
+	.footer_box.footer_contacts ul.foo_con_info li {
+		margin-bottom: 15px;
+	}
+	.footer_box.footer_contacts ul.foo_con_info li .foo_con_icon {
+		float: none;
+		margin-bottom: 15px;
+	}
+	.footer_box {
+		text-align: center;
+	}
+	.footer_box.footer_contacts ul.foo_con_info li .foo_con_data {
+		width: 100%;
+		padding-left: 0;
+		text-align: center;
+	}
+	.ms_release_box {
+		text-align: center;
+	}
+	.slider_dot {
+		left: 50%;
+		margin-left: -5px;
+	}
+	.ms_upload_box img {
+		margin: 30px 0px;
+		width: 50px;
+	}
+	.ms_upload_btn a.ms_btn {
+		height: 35px;
+		line-height: 38px;
+		width: auto;
+		padding: 0px 15px;
+	}
+	.footer_box.footer_subscribe input.form-control {
+		font-size: 11px;
+	}
+	.footer_box a.foo_app_btn {
+		padding: 10px 0px 10px 0px;
+	}
+	.ms_top_search .form-control {
+		font-size: 11px;
+	}
+	.ms_pro_img img {
+		width: 80px;
+		height: 80px;
+		border-radius: 100%;
+		border: 2px solid #b1d4e0;
+	}
+	.ms_pro_img img {
+		width: 80px;
+		height: 80px;
+	}
+	.ms_profile_box {
+		padding: 30px 10px;
+	}
+	.ms_pro_form .ms_btn {
+		height: 35px;
+		width: auto;
+		line-height: 39px;
+		margin-left: 0;
+		padding: 0px 20px;
+		margin-bottom: 10px;
+	}
+	.ms_pro_form .form-group label {
+		font-size: 13px;
+	}
+	.ms_pro_form .form-group {
+		margin-bottom: 15px;
+	}
+	.ms_plan_box ul li {
+		font-size: 11px;
+	}
+	.ms_acc_ovrview_list ul li span {
+		width: 100%;
+		text-align: center;
+	}
+	.ms_blog_section.blog_active span.ovrly_text1 a {
+		font-size: 14px;
+	}
+	.ms_album_single_wrapper {
+		padding-left: 30px;
+		padding-right: 20px;
+	}
+	.ms_album_single_wrapper .album_list_wrapper {
+		width: 350%;
+	}
+}
+@media(max-width:320px) {
+	.album_btn a.ms_btn {
+		padding: 0px 5px;
+		font-size: 12px;
+		margin-bottom: 10px;
+		margin-right: 0px;
+	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+	.ms_album_single_wrapper .ms_more_icon {
+		top: -35px;
+	}
+	.album_single_text h2 {
+		font-size: 20px;
+	}
+	.album_single_data ul.more_option {
+		right: 0;
+	}
+	ul.more_option li a .opt_icon {
+		display: none;
+	}
+	.ms_test_wrapper {
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 10px;
+	}
+	.ms_test_top .ms_test_img {
+		width: 100%;
+		text-align: center;
+	}
+	.ms_test_top .ms_test_name {
+		width: 100%;
+		padding-top: 20px;
+		text-align: center;
+		padding-left: 0;
+	}
+	.ms_test_para {
+		text-align: center;
+	}
+	.album_single_text {
+		text-align: center;
+	}
+	.ms_cmnt_wrapper .form-control {
+		font-size: 11px;
+	}
+	.jp-playlist .que_data {
+		width: 100%;
+		padding-left: 0px;
+	}
+	.jp_queue_btn a {
+		margin-bottom: 10px;
+	}
+	.play-left-arrow {
+		display: none;
+	}
+	.ms_play_song {
+		width: 80px;
+	}
+	.jp-gui.jp-interface.flex-wrap {
+		left: 32%;
+	}
+	.main-container.ms_profile .ms_header {
+		/* padding: 20px 15px 10px; */
+	}
+	.ms_upload_box .section-headings h1 {
+		font-size: 14px;
+	}
+	.ms_pro_form .form-group {
+		padding: 0px 0px;
+	}
+	.pro-form-btn {
+		padding: 0px 0px;
+	}
+	.ms_pro_form .form-control {
+		padding: 0px 8px;
+		font-size: 11px;
+	}
+	.ms_plan_box ul {
+		padding: 0px 10px;
+	}
+	.ms_plan_box a.ms_btn {
+		width: 115px;
+	}
+	.ms_acc_ovrview_list ul li {
+		text-align: center;
+	}
+	.ms_admin_name span.ms_pro_name {
+		width: 40px;
+		height: 40px;
+		line-height: 46px;
+		margin-left: 3px;
+	}
+	.ms_admin_name {
+		font-size: 11px;
+		margin-left: 0px;
+	}
+	.jp-controls.flex-item {
+		-ms-flex-preferred-size: 190px;
+		flex-basis: 190px;
+	}
+}

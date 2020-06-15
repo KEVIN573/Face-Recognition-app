@@ -1,5 +1,5 @@
 import React from 'react'
-import Brand from '../../components/Brand/Brand';
+import Brand from '../Brand/Brand';
 import '../Navigation/Navigation.css'
 const Navigation = () => {
   return (

@@ -1,0 +1,94 @@
+/*====Banner Css Start====*/
+.banner-section{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient( rgba(27, 32, 57, 0.6), rgba(27, 32, 57, 0.5));
+	background-size: cover;
+	background-repeat: no-repeat;
+	top: 12vh;
+	left: 80px;
+}
+
+.banner-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.banner-content h4{
+	color: #b1d4e0;
+	margin-bottom: 26px;
+}
+
+.banner-content h1 span{
+	color: #e67c33;
+}
+
+.banner-content .banner-btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: auto;
+	height: auto;
+}
+
+.banner-content .banner-btn a {
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 400;
+	color: #b1d4e0;
+	background:  #e67c33;
+	padding: 15px;
+	border-radius: 5px;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	text-transform: uppercase;
+
+}
+
+.banner-content .banner-btn a:hover{
+	color: #b1d4e0;
+}
+
+.banner-content .banner-btn a:before{
+	position: absolute;
+	content: ""; 
+	top: 0px;
+	height: 100%;
+	left: -25%;
+	width: 0%;
+	background-color: #3498db;
+	transform: skew(50deg);
+	transition-duration: 1s;
+	z-index: 1;
+}
+
+.banner-content .banner-btn a:hover:before{
+	width: 170%;
+}
+
+.banner-content .banner-btn a span{
+	position: relative;
+	z-index: 9;
+}
+
+.banner-content h1 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #b1d4e0;
+	margin-bottom: 10px;
+}
+
+.banner-content p {
+	color: #b1d4e0;
+	text-transform: capitalize;
+}
+

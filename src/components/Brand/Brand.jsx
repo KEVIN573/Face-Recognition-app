@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../Images/logo/logo9.png';
+import logo from '../../Images/logo/ko-logo.png';
 import '../Brand/Brand.css'
 
 const Brand = () => {
