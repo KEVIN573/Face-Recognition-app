@@ -3,8 +3,8 @@ import '../ImageLinkForm/ImageLinkForm.css'
 
 const ImageLinkForm = ({onInputChange, onButtonSubmit}) => {
   return (
-     <section className='image-link'>
-        <div className='ko-text-container'>
+    <section className='image-link'>
+        <div className='text-container'>
           <p>{'Detect a face in your image, have Fun!'}</p>
         </div>
         

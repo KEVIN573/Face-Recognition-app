@@ -1,8 +1,8 @@
-.ko-text-container {
+.text-container {
     text-align: center;
   }
   
-.ko-text-container p{
+.text-container p{
   font-size: 1rem;
   color: #dfe6e9;
 }
@@ -17,8 +17,8 @@
 input[type="text"] {
   padding: 10px 15px;
   color:#273755;
-  height: 34px;
-  width: 180px;
+  height: 50px;
+  width: 300px;
   outline: none;
   border: none;
   font-size: 16px;
@@ -37,8 +37,8 @@ input[type="text"]:focus {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 30%;
-  height: 45px;
+  width: 200px;
+  height: 50px;
   font-size: 14px;
   padding: 10px 15px;
   text-transform: uppercase;
@@ -79,27 +79,27 @@ input[type="text"]:focus {
 }
 
 @media screen and (min-width: 576px) {
-  .ko-text-container p {
+  .text-container p {
     font-size: 1.5rem;
   }
 
 }
 @media screen and (min-width: 992px) {
-  .ko-text-container p {
+  .text-container p {
     font-size: 1.6rem;
   }
 
 }
 
 @media screen and (min-width: 1024px) {
-  .ko-text-container p {
+  .text-container p {
     font-size: 1.6rem;
   }
 
 }
 
 @media screen and (min-width: 1440px) {
-  .ko-text-container p {
+  .text-container p {
     font-size: 2rem;
     
   }
@@ -124,7 +124,7 @@ input[type="text"]:focus {
 }
 
 @media screen and (min-width: 2560px) {
-  .ko-text-container p {
+  .text-container p {
     font-size: 4.5rem;
   }
 

@@ -14,15 +14,31 @@ body, html {
   font-size: 16px;
   font-family: serif;
   line-height: 1.4;
-  background: #fafcff;
+  
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 12vh;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 88vh;
+  width: 100%;
+  background: linear-gradient(89deg, #273755 0%, #8aabca 100%);
+  padding: 0 3rem;
 }
 
 .content-section {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: linear-gradient(50deg, #8aabca 0%, #273755 100%);
   margin-left: 200px;
+
 }
 
 .content-section .content-items {
@@ -35,8 +51,6 @@ body, html {
   height: auto;
   left: 0;
   top: 0;
-  
-  border: 2px solid red;
 }
 
 

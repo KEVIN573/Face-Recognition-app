@@ -4,9 +4,11 @@ import '../Rank/Rank.css'
 
 const Rank = () => {
     return (
-        <div className='ko-rank-container'>
-            <h1>Rank number, #5</h1>
-        </div>
+        <React.Fragment>
+            <div className='ko-rank-container'>
+                <h2>Rank number, #5</h2>
+            </div>
+        </React.Fragment>
         
     )
 }
