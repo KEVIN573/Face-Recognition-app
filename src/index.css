@@ -1,58 +1,10 @@
-* {
+body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  background: linear-gradient(89deg, #FF5EDF 0%, #04C8DE 100%); /* w3c */
 }
 
-/* globals */
-body, html {
-  min-width: 100%;
-  overflow-x: hidden;
-  font-size: 16px;
-  font-family: serif;
-  line-height: 1.4;
-  
+button {
+  cursor: pointer;
 }
-
-.main-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  top: 12vh;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  height: 88vh;
-  width: 100%;
-  background: linear-gradient(89deg, #273755 0%, #8aabca 100%);
-  padding: 0 3rem;
-}
-
-.content-section {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  margin-left: 200px;
-
-}
-
-.content-section .content-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  left: 0;
-  top: 0;
-}
-
-
-
-

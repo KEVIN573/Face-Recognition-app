@@ -1,16 +1,16 @@
-import React from 'react'
-import '../Rank/Rank.css'
+import React from 'react';
 
-
-const Rank = () => {
-    return (
-        <React.Fragment>
-            <div className='ko-rank-container'>
-                <h2>Rank number, #5</h2>
-            </div>
-        </React.Fragment>
-        
-    )
+const Rank = ({ name, entries }) => {
+  return (
+    <div>
+      <div className='white f3'>
+        {`${name}, your current entry count is...`}
+      </div>
+      <div className='white f1'>
+        {entries}
+      </div>
+    </div>
+  );
 }
 
-export default Rank
+export default Rank;
